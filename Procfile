@@ -1,0 +1,1 @@
+web: gunicorn neobis_drf.wsgi
