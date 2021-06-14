@@ -2,7 +2,7 @@
 
 ## URL
 
-### <https://neobis-drf.herokuapp.com/courses/>
+### <https://neobis-zhantai-drf.herokuapp.com/courses/>
 
 ## Here's the link to see my API documentstion:
 
