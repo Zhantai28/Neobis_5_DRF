@@ -1,0 +1,107 @@
+FORMAT: 1A
+HOST: https://neobis-zhantai-drf.herokuapp.com/
+
+# Zhantai API documentation
+
+This is my API documentation for my simple DRF project in Neobis. 
+
+## Courses Collection [/courses/]
+
+### List All Courses [GET]
+
++ Response 200 (application/json)
+
+        [
+            {
+            "id": 1,
+            "contacts": [
+                {
+                    "type": 3,
+                    "value": "Zhantai.Smile@gmail.com"
+                }
+            ],
+            "branches": [
+                {
+                    "latitude": "adsgads",
+                    "longitude": "gqewrf",
+                    "address": "tqwefg"
+                }
+            ],
+            "name": "fads",
+            "description": "fdas courses",
+            "logo": null,
+            "category": 1
+            }
+        ]
+
+### Create a New Course [POST]
+
+You may create your own courses using this action. It takes a JSON
+object containing a name, description, category and collections of contacts and branches in the
+form of choices.
+
++ Request (application/json)
+
+        {
+            "id": 3,
+            "contacts": [
+                {
+                    "type": 1,
+                    "value": "Zhantai.Smile@gmail.com"
+                }
+            ],
+            "branches": [
+                {
+                    "latitude": "cvxzad",
+                    "longitude": "reqwtad",
+                    "address": "hsatewfdv"
+                }
+            ],
+            "name": "Mad",
+            "description": "Mad courses",
+            "logo": null,
+            "category": 1
+        }
+
++ Response 201 (application/json)
+
+    + Headers
+
+
+    + Body
+            
+            
+            
+## Course [/courses/{course_id}/]
+
++ Parameters
+    + course_id (number) - ID of the Course in the form of an integer
+
+### View a Course Detail [GET]
+
++ Response 200 (application/json)
+
+        {
+            "id": 2,
+            "contacts": [
+                {
+                    "type": 1,
+                    "value": "фпыв"
+                }
+            ],
+            "branches": [
+                {
+                    "latitude": "уфыпва",
+                    "longitude": "пвафып",
+                    "address": "мсячфвы"
+                }
+            ],
+            "name": "134",
+            "description": "43213 йеуцпй",
+            "logo": null,
+            "category": 1
+        }
+        
+### Delete [DELETE]
+
++ Response 204
